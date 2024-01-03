@@ -393,7 +393,7 @@ Execute the following command to install it:
 
 After the installation [.filename]#/usr/local/etc/doas.conf# must be configured to grant access for users for specific commands, or roles.
 
-The simpliest entry could be the following, which grants the user `local_user` with `root` permissions without asking for its password when executing the doas command.
+The simplest entry could be the following, which grants the user `local_user` with `root` permissions without asking for its password when executing the doas command.
 
 [.programlisting]
 ....
@@ -854,7 +854,7 @@ Then execute the following command to enable the service:
 The first time sshd starts on a FreeBSD system, the system's host keys will be automatically created and the fingerprint will be displayed on the console.
 Provide users with the fingerprint so that they can verify it the first time they connect to the server.
 
-Refer to man:sshd[8] for the list of available options when starting sshd and a more complete discussion about authentication, the login process, and the various configuration files.
+Refer to man:sshd[8] for the list of available options when starting sshd and a complete discussion about authentication, the login process, and the various configuration files.
 
 At this point, the sshd should be available to all users with a username and password on the system.
 
@@ -1080,7 +1080,7 @@ When not configured correctly, the FIPS module is expected to fail as follows:
 # echo test | openssl aes-128-cbc -a -provider fips -pbkdf2
 ....
 
-The ouput should be similar to the following:
+The output should be similar to the following:
 
 [.programlisting]
 ....
@@ -1100,7 +1100,7 @@ OpenSSL provides the man:openssl-fipsinstall[1] utility to help with this proces
 # openssl fipsinstall -module /usr/lib/ossl-modules/fips.so -out /etc/ssl/fipsmodule.cnf
 ....
 
-The ouput should be similar to the following:
+The output should be similar to the following:
 
 [.programlisting]
 ....
@@ -1152,7 +1152,7 @@ With this done, it should be possible to confirm that the FIPS module is effecti
 # echo test | openssl aes-128-cbc -a -provider fips -pbkdf2
 ....
 
-The ouput should be similar to the following:
+The output should be similar to the following:
 
 [.programlisting]
 ....

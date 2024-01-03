@@ -1,6 +1,6 @@
 #!/usr/local/bin/perl -T
 #
-# Copyright (c) 1996-2023 Wolfram Schneider <wosch@FreeBSD.org>
+# Copyright (c) 1996-2024 Wolfram Schneider <wosch@FreeBSD.org>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -342,8 +342,6 @@ $manPathDefault = 'FreeBSD 14.0-RELEASE and Ports';
     'FreeBSD 13.0-RELEASE',
 "$manLocalDir/FreeBSD-13.0-RELEASE/man:$manLocalDir/FreeBSD-13.0-RELEASE/openssl/man",
 
-    'FreeBSD 12.4-STABLE',
-"$manLocalDir/FreeBSD-12.4-STABLE/man:$manLocalDir/FreeBSD-12.4-STABLE/openssl/man",
     'FreeBSD 12.4-RELEASE',
 "$manLocalDir/FreeBSD-12.4-RELEASE/man:$manLocalDir/FreeBSD-12.4-RELEASE/openssl/man",
     'FreeBSD 12.3-RELEASE',
@@ -969,7 +967,6 @@ while ( ( $key, $val ) = each %manPath ) {
     'freebsd-stable',   'FreeBSD 14.0-STABLE',
     'freebsd-stable14', 'FreeBSD 14.0-STABLE',
     'freebsd-stable13', 'FreeBSD 13.2-STABLE',
-    'freebsd-stable12', 'FreeBSD 12.4-STABLE',
 
     'freebsd-current',       'FreeBSD 15.0-CURRENT',
     'freebsd-release-ports', 'FreeBSD 14.0-RELEASE and Ports',
@@ -2086,7 +2083,7 @@ sub faq {
 
     return qq{\
 <pre>
-Copyright (c) 1996-2023 <a href="$mailtoURL">Wolfram Schneider</a>
+Copyright (c) 1996-2024 <a href="$mailtoURL">Wolfram Schneider</a>
 Copyright (c) 1993-1995 Berkeley Software Design, Inc.
 
 This data is part of a licensed program from BERKELEY SOFTWARE
